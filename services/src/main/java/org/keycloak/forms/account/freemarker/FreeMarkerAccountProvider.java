@@ -249,8 +249,8 @@ public class FreeMarkerAccountProvider implements AccountProvider {
             for (FormMessage message : this.messages) {
                 String formattedMessageText = formatMessage(message, messagesBundle, locale);
                 if (formattedMessageText != null) {
-                    wholeMessage.appendSummaryLine(formattedMessageText);
-                    messagesPerField.addMessage(message.getField(), formattedMessageText, messageType);
+                    wholeMessage.appendSummaryLine(formattedMessageText, message.getMessage());
+                    messagesPerField.addMessage(message.getField(), message.getMessage(), formattedMessageText, messageType);
                 }
             }
             attributes.put("message", wholeMessage);
