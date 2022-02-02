@@ -113,10 +113,10 @@
         </dependencies>
     </dependencyManagement>
     
-    <modules>
-        <module>deployment</module>
-        <module>runtime</module>
-        <module>server</module>
-    </modules>
+<!--    <modules>-->
+<!--        <module>deployment</module>-->
+<!--        <module>runtime</module>-->
+<!--        <module>server</module>-->
+<!--    </modules>-->
     
 </project>

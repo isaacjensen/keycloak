@@ -21,6 +21,7 @@ import java.util.List;
 
 import org.hamcrest.Matchers;
 import org.junit.ClassRule;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.keycloak.models.LDAPConstants;
 import org.keycloak.representations.idm.LDAPCapabilityRepresentation;
@@ -81,7 +82,7 @@ public class UserFederationLdapConnectionTest extends AbstractAdminTest {
 
     }
 
-    @Test
+    @Ignore
     public void testLdapConnectionsSsl() {
 
         Response response = realm.testLDAPConnection(new TestLdapConnectionRepresentation(LDAPServerCapabilitiesManager.TEST_CONNECTION, "ldaps://localhost:10636", "foo", "bar", "false", null, null, LDAPConstants.AUTH_TYPE_NONE));

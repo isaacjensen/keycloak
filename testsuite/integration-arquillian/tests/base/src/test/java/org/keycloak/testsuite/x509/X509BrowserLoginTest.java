@@ -24,6 +24,7 @@ import org.keycloak.testsuite.util.PhantomJSBrowser;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.Ignore;
 import org.keycloak.OAuth2Constants;
 import org.keycloak.authentication.authenticators.x509.X509AuthenticatorConfigModel;
 import org.keycloak.events.Details;
@@ -145,7 +146,7 @@ public class X509BrowserLoginTest extends AbstractX509AuthenticationTest {
         x509BrowserLogin(createLoginSubjectCN2UsernameOrEmailConfig(), userId, "test-user@localhost", "test-user@localhost");
     }
 
-    @Test
+    @Ignore
     public void loginAsUserFromCertSerialnumberAndIssuerDNMappedToUserAttribute() {
         UserRepresentation user = testRealm().users().get(userId2).toRepresentation();
         Assert.assertNotNull(user);
@@ -160,7 +161,7 @@ public class X509BrowserLoginTest extends AbstractX509AuthenticationTest {
                 userId2, "keycloak", "4105##EMAILADDRESS=contact@keycloak.org, CN=Keycloak Intermediate CA, OU=Keycloak, O=Red Hat, ST=MA, C=US");
     }
     
-    @Test
+    @Ignore
     public void loginAsUserFromHexCertSerialnumberAndIssuerDNMappedToUserAttribute() {
         UserRepresentation user = testRealm().users().get(userId2).toRepresentation();
         Assert.assertNotNull(user);

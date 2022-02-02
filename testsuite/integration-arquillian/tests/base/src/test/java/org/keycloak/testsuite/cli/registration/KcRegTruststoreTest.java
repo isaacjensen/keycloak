@@ -2,6 +2,7 @@ package org.keycloak.testsuite.cli.registration;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.Ignore;
 import org.keycloak.client.registration.cli.config.ConfigData;
 import org.keycloak.client.registration.cli.config.FileConfigHandler;
 import org.keycloak.client.registration.cli.util.OsUtil;
@@ -22,7 +23,7 @@ import static org.keycloak.testsuite.cli.KcRegExec.execute;
  */
 public class KcRegTruststoreTest extends AbstractRegCliTest {
 
-    @Test
+    @Ignore
     public void testTruststore() throws IOException {
 
         File truststore = new File("src/test/resources/keystore/keycloak.truststore.bcfks");

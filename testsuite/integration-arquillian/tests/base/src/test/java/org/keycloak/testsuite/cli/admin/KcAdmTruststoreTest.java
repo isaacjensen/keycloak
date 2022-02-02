@@ -24,7 +24,7 @@ import static org.keycloak.testsuite.cli.KcAdmExec.execute;
 @Ignore
 public class KcAdmTruststoreTest extends AbstractAdmCliTest {
 
-    @Test
+    @Ignore
     public void testTruststore() throws IOException {
 
         File truststore = new File("src/test/resources/keystore/keycloak.truststore.bcfks");

@@ -22,6 +22,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.ClassRule;
 import org.junit.Test;
+import org.junit.Ignore;
 import org.keycloak.OAuth2Constants;
 import org.keycloak.authentication.authenticators.x509.X509AuthenticatorConfigModel;
 import org.keycloak.events.Details;
@@ -122,7 +123,7 @@ public class X509BrowserCRLTest extends AbstractX509AuthenticationTest {
     }
 
 
-    @Test
+    @Ignore
     public void loginFailedWithInvalidSignatureCRL() {
         X509AuthenticatorConfigModel config =
                 new X509AuthenticatorConfigModel()
@@ -140,7 +141,7 @@ public class X509BrowserCRLTest extends AbstractX509AuthenticationTest {
     }
 
 
-    @Test
+    @Ignore
     public void loginSuccessWithCRLSignedWithIntermediateCA3FromTruststore() {
         X509AuthenticatorConfigModel config =
                 new X509AuthenticatorConfigModel()
