@@ -150,8 +150,8 @@
                             <goal>exec</goal>
                         </goals>
                         <configuration>
-                            <executable>bash</executable>
-                            <commandlineArgs>./copy_files.sh</commandlineArgs>
+                            <executable>cp</executable>
+                            <commandlineArgs>iam-fips/module.xml target/keycloak-${project.version}/modules/org/bouncycastle/main</commandlineArgs>
                         </configuration>
                     </execution>
                 </executions>
